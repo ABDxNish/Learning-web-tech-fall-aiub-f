@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            color: red;
+            padding-top: 300px;
+            padding-right: 10px;
+            padding-bottom: 50px;
+            padding-left: 5px;
+        }
+        .box1 {
+            position: static;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 2px solid blue;
+        }
+        .box2 {
+        position: relative;
+        left: 50px;
+        top: 20px;
+        width: 200px;
+        height: 100px;
+        background-color: lightgreen;
+        border: 2px solid green;
+    }
+    .container {
+        position: relative;
+        width: 500px;
+        height: 200px;
+        background-color: lightgray;
+    }
+    .box3 {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        width: 200px;
+        height: 100px;
+        background-color: orange;
+        border: 2px solid red;
+    }
+    .box4 {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        width: 200px;
+        height: 100px;
+        background-color: purple;
+        color: white;
+        border: 2px solid black;
+    }
+    .box5 {
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 200px; /* পুরো 100% না রেখে ছোট রাখুন */
+        height: 50px;
+        background-color: yellow;
+        border: 2px solid black;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body style="color: blue;">
+    <h1> Fruits Listed</h1>
+    <ol>
+        <li>Apple</li>
+        <li>Bananna</li>
+        <li>Mango</li>
+    </ol>
+    <h2> Flowers Unlisted</h2>
+    <ul>
+        <li>Sunflower</li>
+        <li>Rose</li>
+        <li>Lilly</li>
+    </ul>
+    <h3> Slecet a location</h3>
+    <select id="Location">
+    <option value="Choose One "selected >Chose One</option>
+    <option value="Islamabad">Islamabad</option>
+     <option value="Lahore">Lahore</option>
+<option value="Karachi">Karachi</option>
+<option value="Peshawar">Peshawar</option>
+<option value="Quetta">Quetta</option>
+<option value="Multan">Multan</option>
+<option value="Faisalabad">Faisalabad</option>
+<option value="Rawalpindi">Rawalpindi</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Skardu">Skardu</option>
+<option value="Gilgit">Gilgit</option>
+<option value="Murree">Murree</option>
+<option value="Sialkot">Sialkot</option>
+<option value="Swat">Swat</option>
+<option value="Gwadar">Gwadar</option>
+   
+    </select>
+    <div style="background-color: yellowgreen;">
+        <img src="flower.jpg" width="400px"width="300px" >
+ 
+    </div>
+    <div class="box">
+        This text should be red from box.
+    </div>
+    
+    <p>Flower</p>
+    <p>Flowers are one of the most beautiful creations of nature. They come in different colors, shapes, and fragrances, making the world more vibrant and lively.</p>
+
+<p>Flowers are not just for decoration; they also play a crucial role in pollination and maintaining biodiversity. Many flowers, such as roses, tulips, and lilies, are widely used for expressing emotions and celebrations.</p>
+
+<p>Besides their beauty, flowers are also used in medicines, perfumes, and even food. Their presence in gardens and nature brings peace and happiness to people.</p>
+
+<a href="https://www.aljazeera.com/gallery/2022/12/18/photos-messi-and-argentina-lift-world-cup-after-win-over-france">Click Here</a>
+<h3>Contact us</h3>
+<a href="https://github.com/ABDxNish">Form Creator</a>
+<h4></h4>
+<div class="box1">আমি Static Box</div>
+
+<div class="box2">আমি Relative Box</div>
+<div class="container">
+    <div class="box3">আমি Absolute Box</div>
+    <div class="box4">আমি Fixed Box</div>
+    <div class="box5">আমি Sticky Box</div>
+</body>
+</html>
