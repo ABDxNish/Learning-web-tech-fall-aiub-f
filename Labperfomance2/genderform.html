@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Selection Validation</title>
+</head>
+<body>
+
+    <form onsubmit="return validateGender()">
+        <label>Select your gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="error" style="color: red;"></p>
+
+    <script>
+        function validateGender() {
+            let gender = document.querySelectorAll('input[name="gender"]:checked');
+            let error = document.getElementById("error");
+
+            if (gender.length === 0) {
+                error.innerText = "You must select a gender.";
+                return false;
+            }
+
+            error.innerText = "";
+            return true;
+        }
+    </script>
+
+</body>
+</html>
