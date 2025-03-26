@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<style>
+   
+     .top-right {
+         position: absolute;
+         top: 150px;
+         right: 50px;
+         height: 500px;
+     }
+    
+</style>
+<body>
+    <h1 id="head" align="center" style="color: royalblue;">Welcome To HTML Registration Form</h1>
+    <h3 align="center">Login Here!</h3>
+
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" placeholder="e.x: Hugo" required>
+    <br><br>
+
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" placeholder="e.x: Loris">
+    <br><br>
+
+    <label for="age">Age: </label>
+    <input type="text" id="age" required>
+    <br><br>
+
+    <label for="dob">Date Of Birth: </label>
+    <input type="date" id="dob" required>
+    <br><br>
+
+    <label for="uname">Username: </label>
+    <input type="text" id="uname" placeholder="e.x: abd54@" required>
+    <br><br>
+
+    <label for="pass">Password: </label>
+    <input type="password" id="pass" placeholder="At least 5 characters" required>
+    <br><br>
+
+    <label for="email">Email: </label>
+    <input type="email" id="email" placeholder="e.x: hugoloris112@yahoo.com" required>
+    <br><br>
+
+    <label for="tel">Telephone: </label>
+    <input type="tel" id="tel">
+    <br><br>
+
+    <label for="gender">Sex: </label>
+    <input type="radio" name="sex" id="male"><label for="male">Male</label>
+    <input type="radio" name="sex" id="female"><label for="female">Female</label>
+    <input type="radio" name="sex" id="nonbinary"><label for="nonbinary">Non Binary</label>
+    <br><br>
+
+    <label for="num">Rate it 1 to 10 as beginner: </label>
+    <input type="number" min="0" max="10" id="num">
+    <br><br>
+    <iframe src="https://programmablesearchengine.google.com/about/" class="top-right" width="750" height="850" style="border: 0; " allowfullscreen>Youtube</iframe>
+    <label for="city">Select City:</label>
+    <select id="city">
+        <option value="">Select</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabad">Islamabad</option>
+        <option value="Rawalpindi">Rawalpindi</option>
+        <option value="Peshawar">Peshawar</option>
+        <option value="Quetta">Quetta</option>
+        <option value="Multan">Multan</option>
+        <option value="Faisalabad">Faisalabad</option>
+        <option value="Sialkot">Sialkot</option>
+        <option value="Sukkur">Sukkur</option>
+        <option value="Gujranwala">Gujranwala</option>
+        <option value="Bahawalpur">Bahawalpur</option>
+    </select>
+    <br><br>
+    
+    <p id="error" style="color: red;"></p>
+
+    <button onclick="resetForm()">Reset</button>
+    <br><br>
+    <button onclick="submitForm()">Submit</button>
+
+    <script>
+        function resetForm() {
+            document.getElementById('fname').value = "";
+            document.getElementById('lname').value = "";
+            document.getElementById('age').value = "";
+            document.getElementById('dob').value = "";
+            document.getElementById('uname').value = "";
+            document.getElementById('pass').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('tel').value = "";
+            document.getElementById('num').value = "";
+            document.getElementById('error').innerText = "";
+            document.getElementById('head').innerText = "Welcome To HTML Registration Form";
+        }
+
+        function submitForm() {
+            let email = document.getElementById('email').value;
+            let fname = document.getElementById('fname').value;
+            let lname = document.getElementById('lname').value;
+            let age = document.getElementById('age').value;
+            let uname = document.getElementById('uname').value;
+            let pass = document.getElementById('pass').value;
+            let num = document.getElementById('num').value;
+
+            let error = document.getElementById('error');
+            if (email.trim() === "") {
+                error.innerText = "Email cannot be empty";
+                return;
+            }
+
+            if (fname.trim() === "") {
+                error.innerText = "First name cannot be empty";
+                return;
+            }
+
+            if (lname.trim() === "") {
+                error.innerText = "Last name cannot be empty";
+                return;
+            }
+
+            if (age.trim() === "" || isNaN(age) || age <= 0) {
+                error.innerText = "Please enter a valid age";
+                return;
+            }
+
+            if (uname.trim() === "") {
+                error.innerText = "Username cannot be empty";
+                return;
+            }
+
+            if (pass.trim() === "") {
+                error.innerText = "Password cannot be empty";
+                return;
+            }
+
+           
+
+            error.innerText = "";
+            document.getElementById('head').innerText = "Form submitted successfully!";
+        }
+    </script>
+</body>
+</html>
