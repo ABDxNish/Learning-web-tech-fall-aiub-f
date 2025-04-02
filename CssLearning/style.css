@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+h1{
+    color:chartreuse;
+    font-family: "press start 2p";
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-left-color: red;
+    border-left-width: 10px;
+    border-color: aqua;
+}
+p{
+    color:chocolate
+}
+#col{
+    color:aqua
+}
+.coll{
+    color:crimson;
+    border-style: dotted;
+    border-width: 5px;
+    border-color:gold;
+    border-radius: 10px;
+    padding:5px;
+}
