@@ -1,0 +1,11 @@
+h1{
+    text-shadow: 5px 5px 0px grey; /*right/left,top/down,shadow occupacity 5 pix dane (-5px dile)file mane upure uthbe,0px left*/
+
+}
+h1:hover{
+    box-shadow: 5px 5px 5px black;
+}
+.effect{
+    text-shadow: 0px 0px 5px yellow, 0px -5px 5px red;
+    box-shadow: 5px 5px 5px black;
+}

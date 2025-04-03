@@ -1,0 +1,25 @@
+a:link{
+    color:lawngreen; /*color hbe eta*/
+}
+a:visited{
+    color:yellow; /*jodi visit kora hy clr chng hye eta hbe*/
+}
+a:hover{
+    color:tomato; /*mouse ekhane nile ei color dekhabe*/
+}
+a:active{
+    color:darkmagenta;
+    /*mouse hold kore rakhle ei color hbe*/
+}
+button:hover{
+   background-color: tomato; 
+}
+button:active{
+    background-color: aqua;
+}
+li:nth-child(odd){
+    background-color: yellow;
+}
+li:nth-child(2n){
+    background-color: green; /*every second elemnt is colored*/
+}
