@@ -1,0 +1,22 @@
+.box1{
+    border:10px;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    /*position:static; etar mane no change here, by default jekhane thakar kotha okhanei thake */
+    position: relative; /*we can move these elemnt in some point of origin */
+    top: 200px;
+    left: 100px;
+}
+.box2{
+    border:10px;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 150px;
+    position:absolute /*nearest kono realtive r sapekkhe shorbe . by default er position body r sathe lege thake */
+    top:150px;
+    left:150px;
+   
+}
+

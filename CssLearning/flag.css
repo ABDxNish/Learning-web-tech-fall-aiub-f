@@ -1,0 +1,29 @@
+.box1{
+    border:5px ;
+    height:300px;
+    width:300px;
+    background-color: green;
+    position:relative;
+    left: 300px; /*if i move box1 the box2 will also move */
+    /* position: fixed;
+    top:0px;
+    right:0px;
+    it will be fixed on right corner */
+    /*postion:sticky;
+    top:0px;
+    bottom:0px;
+    upore ba niche scroll korle atke thakbe */
+ 
+}
+.box2{
+    border:5px ;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute; /*nearest kono realtive r sapekkhe shorbe . by default er position body r sathe lege thake */
+    top:75px;
+    left:75px;
+   
+   
+}
