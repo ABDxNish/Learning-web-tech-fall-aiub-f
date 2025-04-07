@@ -1,0 +1,112 @@
+#circle{
+    border: 5px;
+    height:150px;
+    width:150px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    
+    animation: myslide;
+    animation-duration:  5s; /*will take five sec to move*/
+    animation-iteration-count: infinite; /*can run this animation infinite times*/
+    animation-play-state: running; /*start hbe running hye*/
+    animation-delay: 2s; /*after 2 sec it will start*/
+    animation-timing-function: ease-out; /*start quickly , end slowly... ease-in vice versa/ only ease will do both.. lineare keep constant*/
+    /* animation: 5s linear 2s infinite running myslide*/
+}
+#circle2{
+    border: 5px;
+    height:150px;
+    width:150px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+}
+@keyframes myslide2{
+    from{margin-left: 0%;} /*any property that want to apply in this element at beginning*/
+    to{
+      margin-left: 100%;
+    } /*end*/
+}
+#circle2:active {
+  animation: 5s linear 0s infinite running myslide2;
+}
+
+/* #circle2:hover {
+  animation: 5s linear 0s infinite running myslide2;
+}
+*/
+
+
+@keyframes myslide{
+      from{margin-left: 100%;} /*any property that want to apply in this element at beginning*/
+      to{
+        margin-left: 0%;
+      } /*end*/
+}
+
+#circle3{
+  border: 5px;
+  height:150px;
+  width:150px;
+  background-color: aqua;
+  border-radius: 50%;
+  text-align: center;
+
+
+  animation: 
+
+  5s linear 0s infinite running rotate,
+  5s linear 0s infinite running myslide;
+
+}
+@keyframes rotate{
+  100%{transform:rotateZ(360deg)} /*once this elemnet reaches 100% will rotate x*/
+}
+#circle4{
+  border: 5px;
+  height:150px;
+  width:150px;
+  background-color: yellow;
+  border-radius: 50%;
+  text-align: center;
+  animation: 2s linear 0s infinite running occupacity4;
+  animation: 
+  2s linear 0s infinite running occupacity4,
+  10s linear 0s infinite running myslide2;
+}
+@keyframes occupacity4{
+  100%{opacity: 0;}
+}
+#circle5{
+  border: 5px;
+  height:150px;
+  width:150px;
+  background-color: rgb(255, 0, 149);
+  border-radius: 50%;
+  text-align: center;
+  animation:  5s linear 0s infinite running shrink,
+  10s linear 0s infinite running myslide2;
+
+}
+@keyframes shrink{
+  50%{transform:scale(0.5,0.5)}
+}
+#circle6{
+  border: 5px;
+  height:150px;
+  width:150px;
+  background-color:chartreuse;
+  border-radius: 50%;
+  text-align: center;
+  animation:  5s linear 0s infinite running colorchange,
+  10s linear 0s infinite running myslide;
+
+}
+@keyframes colorchange{
+  20%{background-color:red;}
+  40%  { background-color: yellow; }
+  60%  { background-color: green; }
+  80%  { background-color: blue; }
+  100% { background-color: violet; }
+}
